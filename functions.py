@@ -13,7 +13,7 @@ limpar_terminal()
 class Jogador:
     def __init__(self, nome):
         self.nome = nome
-        self.vida = 3  # Vida inicial fixa em 3
+        self.vida = 3  # Vida inicial 3
 
 def cadastrar_usuario(nome):
     jogador = Jogador(nome)

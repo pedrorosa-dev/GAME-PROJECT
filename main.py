@@ -37,4 +37,3 @@ limpar_terminal()
 print('-' * 200)
 print(f"Jogador: {jogador.nome}")
 print(f"Vida: {jogador.vida}")
- 

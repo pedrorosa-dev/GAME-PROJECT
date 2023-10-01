@@ -32,6 +32,9 @@ time.sleep(3.5)
 limpar_terminal()
 
 # INITIAL GAME - INÍCIO DO GAME
+
+#PRIMEIRA PERGUNTA
 print('-' * 200)
 print(f"Jogador: {jogador.nome}")
 print(f"Vida: {jogador.vida}")
+ 

@@ -5,7 +5,7 @@ def limpar_terminal():
         os.system('clear')  # Comando clear para sistemas Unix (MacOS e Linux)
     elif os.name == 'nt':
         os.system('cls')    # Comando cls para Windows
-limpar_terminal()
+
 
 
 #CREATE USER - CRIAR USUARIO

@@ -14,7 +14,7 @@ limpar_terminal()
 
 #CREATE A PLAYER  - CRIANDO O JOGADOR
 #USUARIO = JOGADOR 
-nome_usuario = input("Digite o nome do jogador: ")
+nome_jogador = input("Digite o nome do jogador: ")
+jogador = cadastrar_usuario(nome_jogador)
 time.sleep(1.2)
-usuario = cadastrar_usuario(nome_usuario)
-print(f"Ola, {usuario.nome}! vamos começar nossa jornada? espero que esteja pronto por que o caminho não será nada facil! ")
+print(f"Ola, {jogador.nome}! vamos começar nossa jornada? espero que esteja pronto por que o caminho não será nada facil! ")

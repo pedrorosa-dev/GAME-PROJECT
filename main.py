@@ -28,7 +28,7 @@ time.sleep(2.2)
 print(f"Olá, {jogador.nome}! Vamos começar nossa jornada? Espero que esteja pronto, porque o caminho não será nada fácil!")
 time.sleep(2.2)
 print("Carregando...")
-time.sleep(4)
+time.sleep(3.5)
 limpar_terminal()
 
 # INITIAL GAME - INÍCIO DO GAME

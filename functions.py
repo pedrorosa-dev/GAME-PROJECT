@@ -50,6 +50,7 @@ def mostrar_loja():
         except ValueError:
             print(f"Erro: apenas de 1 a 4.")
             
+            #ESSE IF TA COM ERRO
     if escolha == 1:
       if jogador.moeda < 2:
         print("Você não tem moedas suficientes!")

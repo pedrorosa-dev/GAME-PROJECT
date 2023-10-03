@@ -2,14 +2,15 @@ import time
 from functions import limpar_terminal
 from functions import cadastrar_usuario
 from functions import mostrar_loja
+from functions import tempo_resposta
 
 # INTRODUCTION - INTRODUÇÃO
-#time.sleep(0.2)
+#tempo_resposta()
 print('=' * 100)
 print("")
 print("Bem vindos ao nome do game")
 print("")
-#time.sleep(2.5)
+#tempo_resposta()
 print("O jogador terá inicialmente três tentativas para acertar corretamente as perguntas até chegar no one piece")
 print("")
 print('=' * 100)
@@ -30,11 +31,13 @@ while True:
         print("")
         print(f"Erro: Por favor, digite um nome válido.")
         print("")
+        
 print("=" *100)
+print("")
 
-#time.sleep(2.2)
+#tempo_resposta()
 print(f"Olá, {jogador.nome}! Vamos começar nossa jornada? Espero que esteja pronto, porque o caminho não será nada fácil!")
-#time.sleep(2.2)
+#tempo_resposta()
 print("Carregando...")
 limpar_terminal()
 
@@ -46,4 +49,4 @@ print(f"Jogador: {jogador.nome}")
 print(f"Vida: {jogador.vida}")
 print(f"Moeda: {jogador.moeda}")
 
-mostrar_loja()
+mostrar_loja(jogador)

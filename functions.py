@@ -10,6 +10,10 @@ def limpar_terminal():
         os.system('cls')    # Comando cls para Windows
 
 
+#TEMPO TIME SLEEP
+def tempo_resposta():
+  time.sleep(2.2)
+
 
 #CREATE USER - CRIAR USUARIO
 #USUARIO = JOGADOR
@@ -26,8 +30,7 @@ def cadastrar_usuario(nome):
 
 #LOJA - SHOPPING
 
-def mostrar_loja():
-  from functions import cadastrar_usuario
+def mostrar_loja(jogador: object):
   while True:
     print("=" * 100)
     print("")

@@ -5,12 +5,9 @@ from functions import mostrar_loja
 from functions import tempo_resposta
 
 # INTRODUCTION - INTRODUÇÃO
-tempo_resposta()
 print('=' * 100)
-print("")
 print("Bem vindos ao nome do game")
 print("")
-tempo_resposta()
 print("O jogador terá inicialmente três tentativas para acertar corretamente as perguntas até chegar no one piece")
 print("")
 print('=' * 100)
@@ -35,7 +32,6 @@ while True:
 print("=" *100)
 print("")
 
-tempo_resposta()
 print(f"Olá, {jogador.nome}! Vamos começar nossa jornada? Espero que esteja pronto, porque o caminho não será nada fácil!")
 tempo_resposta()
 print("Carregando...")

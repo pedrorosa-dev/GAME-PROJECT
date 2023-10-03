@@ -56,7 +56,10 @@ def mostrar_loja(jogador: object):
         
     if escolha == 1:
       if jogador.moeda < 2:
+        print("=" *100)
+        print("")
         print("Você não tem moedas suficientes!")
+        print("")
       else:
         jogador.vida += 1
         jogador.moeda -= 2  # Deduz as moedas após a compra

@@ -6,21 +6,25 @@ from functions import mostrar_loja
 from functions import tempo_resposta
 from functions import cena
 
-#MENU LOGIN
+# MENU LOGIN
 # Dicionário para armazenar nomes de usuário e senhas
 banco_usuarios = {}
 logado = False  # Variável para controlar se o usuário está logado
+bem_vindo_nome_usuario = None  # criado para nao alterar o nome na hora de exibir o seja bem vindo 
 
 while True:
-    print("="*100)
+    print("=" * 100)
+    print("")
+    if logado and bem_vindo_nome_usuario:
+        print(f"Seja bem-vindo, {bem_vindo_nome_usuario}")
+        print("")
     print("Menu:")
     print("")
     print("1 - Fazer login")
     print("2 - Registrar")
     print("3 - Entrar no jogo")
     print("4 - Sair do jogo")
-    print("="*100)
-    
+    print("=" * 100)
 
     opcao = input("Escolha uma opção: ")
 
@@ -33,6 +37,7 @@ while True:
             print("")
             print("Login bem-sucedido!")
             logado = True
+            bem_vindo_nome_usuario = nome_usuario  # faz com que exiba o seja bem vindo
             cena()
         else:
             print("")
@@ -69,11 +74,12 @@ while True:
         print("Finalizando o jogo...")
         time.sleep(0.8)
         cena()
-        sys.exit() #vai finalizar o programa
+        sys.exit()  # Vai finalizar o programa
     else:
         print("")
         print("Erro: Opção inválida.")
         cena()
+
 
 # INTRODUCTION - INTRODUÇÃO
 print('=' * 100)

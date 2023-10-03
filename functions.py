@@ -1,13 +1,23 @@
-# CLEAR THE TERMINAL - LIMPAR TERMINAL
 import os
+import sys#biblioteca para finalizar o codigo
 import time #time sleep
+# CLEAR THE TERMINAL - LIMPAR TERMINAL
 
 def limpar_terminal():
-    time.sleep(4)
+    time.sleep(2.6)
     if os.name == 'posix':
         os.system('clear')  # Comando clear para sistemas Unix (MacOS e Linux)
     elif os.name == 'nt':
         os.system('cls')    # Comando cls para Windows
+
+def cena():
+    time.sleep(1.3)
+    if os.name == 'posix':
+        os.system('clear')  # Comando clear para sistemas Unix (MacOS e Linux)
+    elif os.name == 'nt':
+        os.system('cls')    # Comando cls para Windows
+
+  
 
 
 #TEMPO TIME SLEEP
@@ -60,10 +70,15 @@ def mostrar_loja(jogador: object):
         print("")
         print("Você não tem moedas suficientes!")
         print("")
+        time.sleep(0.1)
+        cena()
       else:
         jogador.vida += 1
         jogador.moeda -= 2  # Deduz as moedas após a compra
         print(f"Você comprou +1 Vida! Agora você tem {jogador.vida} vidas e {jogador.moeda} moedas.")
+        time.sleep(0.1)
+        cena()
+
 
 
   

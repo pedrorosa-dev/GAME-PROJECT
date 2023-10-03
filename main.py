@@ -3,6 +3,7 @@ from functions import limpar_terminal
 from functions import cadastrar_usuario
 from functions import mostrar_loja
 from functions import tempo_resposta
+from functions import cena
 
 # INTRODUCTION - INTRODUÇÃO
 print('=' * 100)
@@ -20,7 +21,10 @@ print("")
 while True:
     try:
         nome_jogador = input("Digite o nome do jogador: ")
-        if not nome_jogador:
+        print("")
+        time.sleep(0.1)
+        cena()
+        if not nome_jogador:#SE DIGITAR ESPACO E DER ENTER ELE FUNCIONA! TEM QUE AJEITAR
             raise ValueError
         jogador = cadastrar_usuario(nome_jogador)
         break  # Sai do loop se um nome válido for digitado
@@ -44,5 +48,4 @@ print('=' * 100)
 print(f"Jogador: {jogador.nome}")
 print(f"Vida: {jogador.vida}")
 print(f"Moeda: {jogador.moeda}")
-
 mostrar_loja(jogador)

@@ -11,14 +11,11 @@ def limpar_terminal():
         os.system('cls')    # Comando cls para Windows
 
 def cena():
-    time.sleep(1.3)
+    time.sleep(1.4)
     if os.name == 'posix':
         os.system('clear')  # Comando clear para sistemas Unix (MacOS e Linux)
     elif os.name == 'nt':
         os.system('cls')    # Comando cls para Windows
-
-  
-
 
 #TEMPO TIME SLEEP
 def tempo_resposta():
@@ -42,6 +39,10 @@ def cadastrar_usuario(nome):
 
 def mostrar_loja(jogador: object):
   while True:
+    print('=' * 100)
+    print(f"Jogador: {jogador.nome}")
+    print(f"Vida: {jogador.vida}")
+    print(f"Moeda: {jogador.moeda}")
     print("=" * 100)
     print("")
     print("Bem-vindo à loja, aqui você pode usar suas moedas para comprar itens que podem ajudar durante o jogo.")

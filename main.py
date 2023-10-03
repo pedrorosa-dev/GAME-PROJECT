@@ -8,7 +8,7 @@ from functions import cena
 
 #MENU LOGIN
 # Dicionário para armazenar nomes de usuário e senhas
-usuarios = {}
+banco_usuarios = {}
 logado = False  # Variável para controlar se o usuário está logado
 
 while True:
@@ -29,8 +29,7 @@ while True:
         print("")
         nome_usuario = input("Digite o nome de usuário: ")
         senha = input("Digite a senha: ")
-
-        if nome_usuario in usuarios and usuarios[nome_usuario] == senha:
+        if nome_usuario in banco_usuarios and banco_usuarios[nome_usuario] == senha:
             print("")
             print("Login bem-sucedido!")
             logado = True
@@ -40,35 +39,29 @@ while True:
             print("Nome de usuário ou senha incorretos.")
             logado = False
             cena()
-
     elif opcao == "2":
         # Registrar
         print("")
         nome_usuario = input("Digite um nome de usuário: ")
         senha = input("Digite uma senha: ")
-
-        if nome_usuario in usuarios:
+        if nome_usuario in banco_usuarios:
             print("")
             print("Nome de usuário já existe. Escolha outro.")
             cena()
         else:
-            usuarios[nome_usuario] = senha
+            banco_usuarios[nome_usuario] = senha
             print("")
             print("Registro bem-sucedido!")
             cena()
-
     elif opcao == "3":
         # Entrar no jogo
         if logado:
             cena()
             break
-
         else:
             print("")
             print("Você precisa fazer login para entrar no jogo.")
             cena()
-
-
     elif opcao == "4":
         # Sair do programa
         print("")
@@ -76,12 +69,10 @@ while True:
         time.sleep(0.8)
         cena()
         sys.exit() #vai finalizar o programa
-
     else:
         print("")
         print("Erro: Opção inválida.")
         cena()
-
 
 # INTRODUCTION - INTRODUÇÃO
 print('=' * 100)

@@ -25,7 +25,7 @@ while True:
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
-        # Fazer login
+        # Fazer login - made a login
         print("")
         nome_usuario = input("Digite o nome de usuário: ")
         senha = input("Digite a senha: ")
@@ -40,7 +40,7 @@ while True:
             logado = False
             cena()
     elif opcao == "2":
-        # Registrar
+        # Registrar - register
         print("")
         nome_usuario = input("Digite um nome de usuário: ")
         senha = input("Digite uma senha: ")
@@ -54,8 +54,9 @@ while True:
             print("Registro bem-sucedido!")
             cena()
     elif opcao == "3":
-        # Entrar no jogo
+        # Entrar no jogo - join in the game
         if logado:
+            print("Entrando...")
             cena()
             break
         else:
@@ -63,7 +64,7 @@ while True:
             print("Você precisa fazer login para entrar no jogo.")
             cena()
     elif opcao == "4":
-        # Sair do programa
+        # Sair do programa - Leave the program
         print("")
         print("Finalizando o jogo...")
         time.sleep(0.8)

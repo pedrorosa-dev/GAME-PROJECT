@@ -48,6 +48,7 @@ while True:
         senha = input("Digite uma senha: ")
 
         if nome_usuario in usuarios:
+            print("")
             print("Nome de usuário já existe. Escolha outro.")
             cena()
         else:
@@ -100,8 +101,7 @@ while True:
         nome_jogador = input("Digite o nome do jogador: ")
         print("")
         time.sleep(0.1)
-        cena()
-        if not nome_jogador:#SE DIGITAR ESPACO E DER ENTER ELE FUNCIONA! TEM QUE AJEITAR
+        if not nome_jogador.strip():#SE DIGITAR ESPACO E DER ENTER ELE FUNCIONA! TEM QUE AJEITAR
             raise ValueError
         jogador = cadastrar_usuario(nome_jogador)
         break  # Sai do loop se um nome válido for digitado

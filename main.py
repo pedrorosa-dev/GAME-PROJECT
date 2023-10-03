@@ -61,8 +61,9 @@ while True:
     elif opcao == "3":
         # Entrar no jogo - join in the game
         if logado:
+            print("")
             print("Entrando...")
-            cena()
+            limpar_terminal()
             break
         else:
             print("")
@@ -99,6 +100,7 @@ while True:
         nome_jogador = input("Digite o nome do jogador: ")
         print("")
         time.sleep(0.1)
+        cena()
         if not nome_jogador.strip():#SE DIGITAR ESPACO E DER ENTER ELE FUNCIONA! TEM QUE AJEITAR
             raise ValueError
         jogador = cadastrar_usuario(nome_jogador)

@@ -275,36 +275,51 @@ def entretenimento(jogador: object):
     print("=" * 100)
     print("")
     
+
     while True:
         try:
             escolha_entretenimento = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            print("="*100)
             if escolha_entretenimento not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        cena()
         mostrar_loja(jogador)
 
     if escolha_entretenimento == 6:
       if jogador.pulo < 1:
+        print("")
         print("Não há pulos disponíveis no momento...")
+        cena()
       else:
         jogador.pulo -=1
         break
     
     if escolha_entretenimento != 2 and escolha_entretenimento < 5:
+      cena()
       jogador.vida -= 1
       if jogador.vida < 1:
+        cena()
+        print("="*100)
+        print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
+        cena()
+        
         menu_temas(jogador)
       else:
+        print("")
         print("Resposta incorreta, tente mais uma vez!")
+        cena()
         print("")
     
-    elif escolha_entretenimento ==2 and escolha_entretenimento < 5:
+    elif escolha_entretenimento == 2 and escolha_entretenimento < 5:
+      print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
+      cena()
       break
     
   while True:
@@ -334,38 +349,51 @@ def entretenimento(jogador: object):
     print("=" * 100)
     print("")
     
-    
 
     while True:
         try:
             escolha_entretenimento = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            print("="*100)
             if escolha_entretenimento not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        cena()
         mostrar_loja(jogador)
 
     if escolha_entretenimento == 6:
       if jogador.pulo < 1:
+        print("")
         print("Não há pulos disponíveis no momento...")
+        cena()
       else:
         jogador.pulo -=1
         break
     
     if escolha_entretenimento != 3 and escolha_entretenimento < 5:
+      cena()
       jogador.vida -= 1
       if jogador.vida < 1:
+        cena()
+        print("="*100)
+        print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
+        cena()
+        
         menu_temas(jogador)
       else:
+        print("")
         print("Resposta incorreta, tente mais uma vez!")
+        cena()
         print("")
     
-    elif escolha_entretenimento ==3 and escolha_entretenimento < 5:
+    elif escolha_entretenimento == 3 and escolha_entretenimento < 5:
+      print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
+      cena()
       break
     
   while True:
@@ -395,36 +423,51 @@ def entretenimento(jogador: object):
     print("=" * 100)
     print("")
     
+
     while True:
         try:
             escolha_entretenimento = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            print("="*100)
             if escolha_entretenimento not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        cena()
         mostrar_loja(jogador)
 
     if escolha_entretenimento == 6:
       if jogador.pulo < 1:
+        print("")
         print("Não há pulos disponíveis no momento...")
+        cena()
       else:
         jogador.pulo -=1
         break
     
     if escolha_entretenimento != 4 and escolha_entretenimento < 5:
+      cena()
       jogador.vida -= 1
       if jogador.vida < 1:
+        cena()
+        print("="*100)
+        print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
+        cena()
+        
         menu_temas(jogador)
       else:
+        print("")
         print("Resposta incorreta, tente mais uma vez!")
+        cena()
         print("")
     
-    elif escolha_entretenimento == 4 and escolha_entretenimento <5:
+    elif escolha_entretenimento == 4 and escolha_entretenimento < 5:
+      print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
+      cena()
       break
     
   while True:
@@ -458,31 +501,44 @@ def entretenimento(jogador: object):
     while True:
         try:
             escolha_entretenimento = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            print("="*100)
             if escolha_entretenimento not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        cena()
         mostrar_loja(jogador)
 
     if escolha_entretenimento == 6:
       if jogador.pulo < 1:
+        print("")
         print("Não há pulos disponíveis no momento...")
+        cena()
       else:
         jogador.pulo -=1
         break
     
     if escolha_entretenimento != 3 and escolha_entretenimento < 5:
+      cena()
       jogador.vida -= 1
       if jogador.vida < 1:
+        cena()
+        print("="*100)
+        print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
+        cena()
+        
         menu_temas(jogador)
       else:
+        print("")
         print("Resposta incorreta, tente mais uma vez!")
+        cena()
         print("")
     
-    elif escolha_entretenimento == 3 and escolha_entretenimento <5:
+    elif escolha_entretenimento == 3 and escolha_entretenimento < 5:
+      print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
@@ -493,18 +549,6 @@ def entretenimento(jogador: object):
       print("="*100)
       limpar_terminal()
       break
-
-
-    
-
-    
-    
-    
-
-    
-
-
-  
 
 
 

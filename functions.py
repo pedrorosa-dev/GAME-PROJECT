@@ -27,9 +27,9 @@ def tempo_resposta():
 class Jogador:
     def __init__(self, nome):
         self.nome = nome
-        self.vida = 3  # Vida inicial 3
-        self.moeda = 1 # Moeda inicial 1
-        self.pulo = 4#pulo inicial 0
+        self.vida = 0  # Vida inicial 3
+        self.moeda = 0# Moeda inicial 1
+        self.pulo = 0#pulo inicial 0
 
 def cadastrar_usuario(nome):
     jogador = Jogador(nome)
@@ -231,11 +231,12 @@ def entretenimento(jogador: object):
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
-        cena()
         print("="*100)
         print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
-        cena()
+        print("")
+        print("="*100)
+        limpar_terminal()
         
         menu_temas(jogador)
       else:
@@ -287,7 +288,9 @@ def entretenimento(jogador: object):
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
+            print("")
             print(f"Erro: apenas de 1 a 6.")
+            print("")
     if escolha_entretenimento == 5:
         print("")
         print("Entrando...")
@@ -307,7 +310,6 @@ def entretenimento(jogador: object):
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
-        cena()
         print("="*100)
         print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
@@ -317,7 +319,6 @@ def entretenimento(jogador: object):
       else:
         print("")
         print("Resposta incorreta, tente mais uma vez!")
-        cena()
         print("")
     
     elif escolha_entretenimento == 2 and escolha_entretenimento < 5:
@@ -363,7 +364,9 @@ def entretenimento(jogador: object):
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
+            print("")
             print(f"Erro: apenas de 1 a 6.")
+            print("")
     if escolha_entretenimento == 5:
         print("")
         print("Entrando...")
@@ -383,7 +386,6 @@ def entretenimento(jogador: object):
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
-        cena()
         print("="*100)
         print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
@@ -393,7 +395,6 @@ def entretenimento(jogador: object):
       else:
         print("")
         print("Resposta incorreta, tente mais uma vez!")
-        cena()
         print("")
     
     elif escolha_entretenimento == 3 and escolha_entretenimento < 5:
@@ -440,7 +441,9 @@ def entretenimento(jogador: object):
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
+            print("")
             print(f"Erro: apenas de 1 a 6.")
+            print("")
     if escolha_entretenimento == 5:
         print("")
         print("Entrando...")
@@ -460,7 +463,6 @@ def entretenimento(jogador: object):
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
-        cena()
         print("="*100)
         print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
@@ -470,7 +472,6 @@ def entretenimento(jogador: object):
       else:
         print("")
         print("Resposta incorreta, tente mais uma vez!")
-        cena()
         print("")
     
     elif escolha_entretenimento == 4 and escolha_entretenimento < 5:
@@ -508,7 +509,6 @@ def entretenimento(jogador: object):
     print("=" * 100)
     print("")
 
-
     while True:
         try:
             escolha_entretenimento = int(input("Digite de 1 a 6 para escolher uma opção: "))
@@ -517,7 +517,9 @@ def entretenimento(jogador: object):
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
+            print("")
             print(f"Erro: apenas de 1 a 6.")
+            print("")
     if escolha_entretenimento == 5:
         print("")
         print("Entrando...")
@@ -537,7 +539,6 @@ def entretenimento(jogador: object):
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
-        cena()
         print("="*100)
         print("")
         print("Game Over! VOCÊ PERDEU O GAME :(")
@@ -547,7 +548,6 @@ def entretenimento(jogador: object):
       else:
         print("")
         print("Resposta incorreta, tente mais uma vez!")
-        cena()
         print("")
     
     elif escolha_entretenimento == 3 and escolha_entretenimento < 5:

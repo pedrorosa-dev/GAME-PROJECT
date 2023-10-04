@@ -14,7 +14,7 @@ banco_usuarios = {}
 logado = False  # Variável para controlar se o usuário está logado
 bem_vindo_nome_usuario = None  # criado para nao alterar o nome na hora de exibir o seja bem vindo 
 
-while True:
+"""while True:
     print("=" * 100)
     print("")
     if logado and bem_vindo_nome_usuario:
@@ -81,7 +81,7 @@ while True:
     else:
         print("")
         print("Erro: Opção inválida.")
-        cena()
+        cena()"""
 
 
 
@@ -91,9 +91,10 @@ print("")
 print("<<<PEYTRON QUIZ>>>")
 print("")
 print("")
-print("O jogador terá inicialmente três tentativas para acertar corretamente as perguntas até chegar no one piece")
+print("Bem-vindo ao Peytron Quiz! Teste suas habilidades em programação, entretenimento e matemática.")
 print("")
 print('=' * 100)
+time.sleep(1.4)
 limpar_terminal()
 
 # CREATE A PLAYER - CRIANDO O JOGADOR
@@ -117,8 +118,12 @@ while True:
         
 print("=" *100)
 print("")
+print("")
 
 print(f"Olá, {jogador.nome}! Vamos começar nossa jornada? Espero que esteja pronto, porque o caminho não será nada fácil!")
+print("")
+print("")
+print("=" *100)
 tempo_resposta()
 print("")
 print("Carregando...")

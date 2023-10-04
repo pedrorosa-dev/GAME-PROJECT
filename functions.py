@@ -150,7 +150,6 @@ def menu_temas(jogador: object):
         entretenimento(jogador)
       
     elif escolha == 4:
-        cena()
         # Sair do programa - Leave the program
         print("")
         print("Finalizando o jogo...")
@@ -210,8 +209,12 @@ def entretenimento(jogador: object):
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
+            print("")
             print(f"Erro: apenas de 1 a 6.")
+            print("")
     if escolha_entretenimento == 5:
+        print("")
+        print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
@@ -238,7 +241,6 @@ def entretenimento(jogador: object):
       else:
         print("")
         print("Resposta incorreta, tente mais uma vez!")
-        cena()
         print("")
     
     elif escolha_entretenimento == 1 and escolha_entretenimento < 5:
@@ -250,6 +252,7 @@ def entretenimento(jogador: object):
   
   while True:
     print("="*100)
+    print("")
     print("[Entreterimento]")
     print("")
     print("="*100)
@@ -286,6 +289,8 @@ def entretenimento(jogador: object):
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        print("")
+        print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
@@ -360,6 +365,8 @@ def entretenimento(jogador: object):
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        print("")
+        print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
@@ -398,6 +405,7 @@ def entretenimento(jogador: object):
     
   while True:
     print("="*100)
+    print("")
     print("[Entreterimento]")
     print("")
     print("="*100)
@@ -434,6 +442,8 @@ def entretenimento(jogador: object):
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        print("")
+        print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
@@ -472,6 +482,7 @@ def entretenimento(jogador: object):
     
   while True:
     print("="*100)
+    print("")
     print("[Entreterimento]")
     print("")
     print("="*100)
@@ -508,6 +519,8 @@ def entretenimento(jogador: object):
         except ValueError:
             print(f"Erro: apenas de 1 a 6.")
     if escolha_entretenimento == 5:
+        print("")
+        print("Entrando...")
         cena()
         mostrar_loja(jogador)
 

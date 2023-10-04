@@ -26,6 +26,7 @@ while True:
     print("2 - Registrar")
     print("3 - Entrar no jogo")
     print("4 - Sair do jogo")
+    print("")
     print("=" * 100)
 
     opcao = input("Escolha uma opção: ")

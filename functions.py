@@ -564,9 +564,3 @@ def entretenimento(jogador: object):
       print("="*100)
       limpar_terminal()
       break
-
-
-
-
-
-

@@ -82,7 +82,7 @@ while True:
         print("")
         print("Erro: Opção inválida.")
         cena()
-       
+
 
 
 # INTRODUCTION - INTRODUÇÃO

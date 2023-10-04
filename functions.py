@@ -147,7 +147,15 @@ def menu_temas(jogador: object):
     if escolha ==  1:
         cena()
         entretenimento(jogador)
-      
+        
+    #elif escolha == 2:
+        #cena()
+        #programacao(jogador)
+        
+    #elif escolha ==3:
+        #cena()
+        #matematica(jogador)
+        
     elif escolha == 4:
         # Sair do programa - Leave the program
         print("")

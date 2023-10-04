@@ -53,7 +53,7 @@ while True:
               cena()
         except ValueError:
           print("")
-          print("ERRO: NAO PODE ESPACO EM BRANCO")
+          print("ERRO: NÃO PODE ESPAÇO VAZIO")
           cena()
           
     elif opcao == "2":
@@ -78,7 +78,7 @@ while True:
               cena()
         except ValueError: #EXIBIR O ERRO DO ESPACO VAZIO NA HORA DE REGISTRAR O USUARIO E A SENHA
           print("")
-          print("ERRO: ESPACO VAZIO")
+          print("ERRO: NÃO PODE ESPAÇO VAZIO")
           cena()  
           
     elif opcao == "3":

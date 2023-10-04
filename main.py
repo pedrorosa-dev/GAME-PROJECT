@@ -26,39 +26,61 @@ while True:
     print("4 - Sair do jogo")
     print("")
     print("=" * 100)
-
+    
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
         # Fazer login - made a login
         print("")
-        nome_usuario = input("Digite o nome de usuário: ")
-        senha = input("Digite a senha: ")
-        if nome_usuario in banco_usuarios and banco_usuarios[nome_usuario] == senha: #checa se o nome do usuario esta no dicionario
-            print("")
-            print("Login bem-sucedido!")
-            logado = True #Agora é possivel entrar no jogo
-            bem_vindo_nome_usuario = nome_usuario  # faz com que exiba o seja bem vindo
-            cena()
-        else:
-            print("")
-            print("Nome de usuário ou senha incorretos.")
-            logado = False
-            cena()
+        try:
+          nome_usuario = input("Digite o nome de usuário: ")
+          if not nome_usuario.strip():
+            raise ValueError
+          
+          senha = input("Digite a senha: ")
+          if not senha.strip():
+            raise ValueError
+          if nome_usuario in banco_usuarios and banco_usuarios[nome_usuario] == senha: #checa se o nome do usuario esta no dicionario
+              print("")
+              print("Login bem-sucedido!")
+              logado = True #Agora é possivel entrar no jogo
+              bem_vindo_nome_usuario = nome_usuario  # faz com que exiba o seja bem vindo
+              cena()
+          else:
+              print("")
+              print("Nome de usuário ou senha incorretos.")
+              logado = False
+              cena()
+        except ValueError:
+          print("")
+          print("ERRO: NAO PODE ESPACO EM BRANCO")
+          cena()
+          
     elif opcao == "2":
         # Registrar - register
         print("")
-        nome_usuario = input("Digite um nome de usuário: ")
-        senha = input("Digite uma senha: ")
-        if nome_usuario in banco_usuarios: # Checa se o nome de usuario esta no dicionario
-            print("")
-            print("Nome de usuário já existe. Escolha outro.") 
-            cena()
-        else:
-            banco_usuarios[nome_usuario] = senha
-            print("")
-            print("Registro bem-sucedido!")
-            cena()
+        try:
+          nome_usuario = input("Digite um nome de usuário: ")
+          if not nome_usuario.strip(): #TIRA O ESPACO EM BRANCO CASO O USUARIO FACA LOGIN SEM DIGITAR NADA
+            raise ValueError
+          
+          senha = input("Digite uma senha: ") # tira o espaco em BRANCO CASO A SENHA NAO ESTEJA DIGITADA
+          if not senha.strip():
+            raise ValueError
+          if nome_usuario in banco_usuarios: # Checa se o nome de usuario esta no dicionario
+              print("")
+              print("Nome de usuário já existe. Escolha outro.") 
+              cena()
+          else:
+              banco_usuarios[nome_usuario] = senha
+              print("")
+              print("Registro bem-sucedido!")
+              cena()
+        except ValueError: #EXIBIR O ERRO DO ESPACO VAZIO NA HORA DE REGISTRAR O USUARIO E A SENHA
+          print("")
+          print("ERRO: ESPACO VAZIO")
+          cena()  
+          
     elif opcao == "3":
         # Entrar no jogo - join in the game caso o logado esteja True
         if logado:
@@ -70,6 +92,7 @@ while True:
             print("")
             print("Você precisa fazer login para entrar no jogo.")
             cena()
+            
     elif opcao == "4":
         # Sair do programa - Leave the program
         print("")

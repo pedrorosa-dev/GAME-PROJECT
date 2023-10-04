@@ -90,6 +90,7 @@ def mostrar_loja(jogador: object):
     
     elif escolha == 2:
       if jogador.moeda >= 4:
+        print("")
         print(f"{jogador.nome}, Você ganhou um pulo!!")
         jogador.pulo += 1
         jogador.moeda -=4 # reduz as moedas apos a compra
@@ -229,6 +230,7 @@ def entretenimento(jogador: object):
         cena()
       else:
         jogador.pulo -=1
+        cena()
         break #passar para proxima pergunta
     
     if escolha_entretenimento != 1 and escolha_entretenimento < 5:
@@ -308,6 +310,7 @@ def entretenimento(jogador: object):
         cena()
       else:
         jogador.pulo -=1
+        cena()
         break
     
     if escolha_entretenimento != 2 and escolha_entretenimento < 5:
@@ -461,6 +464,7 @@ def entretenimento(jogador: object):
         cena()
       else:
         jogador.pulo -=1
+        cena()
         break
     
     if escolha_entretenimento != 4 and escolha_entretenimento < 5:
@@ -537,6 +541,7 @@ def entretenimento(jogador: object):
         cena()
       else:
         jogador.pulo -=1
+        cena()
         break
     
     if escolha_entretenimento != 3 and escolha_entretenimento < 5:

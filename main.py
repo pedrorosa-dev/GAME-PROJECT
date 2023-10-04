@@ -14,7 +14,7 @@ banco_usuarios = {}
 logado = False  # Variável para controlar se o usuário está logado
 bem_vindo_nome_usuario = None  # criado para nao alterar o nome na hora de exibir o seja bem vindo 
 
-"""while True:
+while True:
     print("=" * 100)
     print("")
     if logado and bem_vindo_nome_usuario:
@@ -81,9 +81,7 @@ bem_vindo_nome_usuario = None  # criado para nao alterar o nome na hora de exibi
     else:
         print("")
         print("Erro: Opção inválida.")
-        cena()"""
-
-
+        cena()
 
 # INTRODUCTION - INTRODUÇÃO
 print('=' * 100)

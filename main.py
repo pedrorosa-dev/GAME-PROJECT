@@ -34,10 +34,10 @@ while True:
         print("")
         nome_usuario = input("Digite o nome de usuário: ")
         senha = input("Digite a senha: ")
-        if nome_usuario in banco_usuarios and banco_usuarios[nome_usuario] == senha:
+        if nome_usuario in banco_usuarios and banco_usuarios[nome_usuario] == senha: #checa se o nome do usuario esta no dicionario
             print("")
             print("Login bem-sucedido!")
-            logado = True
+            logado = True #Agora é possivel entrar no jogo
             bem_vindo_nome_usuario = nome_usuario  # faz com que exiba o seja bem vindo
             cena()
         else:
@@ -50,9 +50,9 @@ while True:
         print("")
         nome_usuario = input("Digite um nome de usuário: ")
         senha = input("Digite uma senha: ")
-        if nome_usuario in banco_usuarios:
+        if nome_usuario in banco_usuarios: # Checa se o nome de usuario esta no dicionario
             print("")
-            print("Nome de usuário já existe. Escolha outro.")
+            print("Nome de usuário já existe. Escolha outro.") 
             cena()
         else:
             banco_usuarios[nome_usuario] = senha
@@ -60,7 +60,7 @@ while True:
             print("Registro bem-sucedido!")
             cena()
     elif opcao == "3":
-        # Entrar no jogo - join in the game
+        # Entrar no jogo - join in the game caso o logado esteja True
         if logado:
             print("")
             print("Entrando...")

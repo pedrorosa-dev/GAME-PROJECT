@@ -82,7 +82,7 @@ def mostrar_loja(jogador: object):
         cena()
       else:
         jogador.vida += 1
-        jogador.moeda -= 2  # Deduz as moedas após a compra
+        jogador.moeda -= 2  # reduz as moedas após a compra
         print("")
         print(f"Você comprou + 1 Vida! Agora você tem {jogador.vida} vidas e {jogador.moeda} moedas.")
         time.sleep(0.1)
@@ -92,7 +92,7 @@ def mostrar_loja(jogador: object):
       if jogador.moeda >= 4:
         print(f"{jogador.nome}, Você ganhou um pulo!!")
         jogador.pulo += 1
-        jogador.moeda -=4
+        jogador.moeda -=4 # reduz as moedas apos a compra
         cena()
       else:
         print("="*100)
@@ -171,6 +171,7 @@ def menu_temas(jogador: object):
       
 
 #TEMA - ENTRETEIDIMENTO -FUN - TEMA 1 - 1 PERGUNTA
+
 def entretenimento(jogador: object):
   jogador.vida = 3
   jogador.moeda = 1
@@ -228,7 +229,7 @@ def entretenimento(jogador: object):
         cena()
       else:
         jogador.pulo -=1
-        break
+        break #passar para proxima pergunta
     
     if escolha_entretenimento != 1 and escolha_entretenimento < 5:
       cena()
@@ -252,7 +253,7 @@ def entretenimento(jogador: object):
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
-      break
+      break 
   
   while True: # TEMA 1 - PERGUNTA 2
     print("="*100)

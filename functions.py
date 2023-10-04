@@ -143,7 +143,6 @@ def menu_temas(jogador: object):
             print("")
             
             print(f"Erro: apenas de 1 a 4.")
-            cena()
             
     if escolha ==  1:
         cena()
@@ -265,7 +264,7 @@ def entretenimento(jogador: object):
     print("")
     print("[Pergunta 2]")
     print("")
-    print("Qual é a série de televisão mais longa da história, com mais de 30 temporadas")
+    print("Qual é a série de televisão mais longa da história, com mais de 30 temporadas?")
     print("")
     print("1) Friends")
     print("2) The Simpsons")
@@ -418,7 +417,7 @@ def entretenimento(jogador: object):
     print("")
     print("[Pergunta 4]")
     print("")
-    print("Qual destes jogos foi desenvolvido pela empresa CD Projekt Red")
+    print("Qual destes jogos foi desenvolvido pela empresa CD Projekt Red?")
     print("")
     print("1) The Elder Scrolls V: Skyrim")
     print("2) Dark Souls III")

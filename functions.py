@@ -103,6 +103,7 @@ def mostrar_loja(jogador: object):
   
     
     elif escolha == 3:
+      print("="*100)
       print("")
       print("Voltando...")
       time.sleep(0.5)

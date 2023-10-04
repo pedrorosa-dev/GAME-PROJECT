@@ -2,10 +2,8 @@ import time
 import sys
 from functions import limpar_terminal
 from functions import cadastrar_usuario
-from functions import mostrar_loja
 from functions import tempo_resposta
 from functions import cena
-from functions import entretenimento
 from functions import menu_temas
 
 # MENU LOGIN

@@ -161,12 +161,7 @@ def menu_temas(jogador: object):
         cena()
       
 
-
-
-
-
-
-#TEMA - ENTRETEIDIMENTO -FUN
+#TEMA - ENTRETEIDIMENTO -FUN - TEMA 1 - 1 PERGUNTA
 def entretenimento(jogador: object):
   jogador.vida = 3
   jogador.moeda = 1
@@ -250,7 +245,7 @@ def entretenimento(jogador: object):
       cena()
       break
   
-  while True:
+  while True: # TEMA 1 - PERGUNTA 2
     print("="*100)
     print("")
     print("[Entreterimento]")
@@ -327,7 +322,7 @@ def entretenimento(jogador: object):
       cena()
       break
     
-  while True:
+  while True: #TEMA 1- PERGUNTA 3
     print("="*100)
     print("[Entreterimento]")
     print("")
@@ -403,7 +398,7 @@ def entretenimento(jogador: object):
       cena()
       break
     
-  while True:
+  while True: #TEMA 1 - PERGUNTA 4
     print("="*100)
     print("")
     print("[Entreterimento]")
@@ -480,7 +475,7 @@ def entretenimento(jogador: object):
       cena()
       break
     
-  while True:
+  while True: #TEMA 1 - PERGUNTA 5
     print("="*100)
     print("")
     print("[Entreterimento]")

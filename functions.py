@@ -1,6 +1,9 @@
 import os
 import sys#biblioteca para finalizar o codigo
 import time #time sleep
+from entretenimento import *
+from matematica import *
+from programacao import *
 # CLEAR THE TERMINAL - LIMPAR TERMINAL
 
 def limpar_terminal():
@@ -156,9 +159,9 @@ def menu_temas(jogador: object):
         cena()
         programacao(jogador)
         
-    #elif escolha == 3:
-        #cena()
-        #matematica(jogador)
+    elif escolha == 3:
+        cena()
+        matematica(jogador)
         
     elif escolha == 4:
         # Sair do programa - Leave the program
@@ -175,7 +178,7 @@ def menu_temas(jogador: object):
 
 #TEMA - ENTRETEIRIMENTO -FUN - TEMA 1 - 1 PERGUNTA
 
-def entretenimento(jogador: object):
+"""def entretenimento(jogador: object):
   jogador.vida = 3
   jogador.moeda = 0
   jogador.pulo = 0
@@ -975,4 +978,4 @@ def programacao(jogador: object):
       print("")
       print("="*100)
       limpar_terminal()
-      break
+      break"""

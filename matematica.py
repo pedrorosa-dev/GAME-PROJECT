@@ -3,7 +3,7 @@ from functions import cena
 from functions import limpar_terminal
 from functions import menu_temas
 
-def matematica(jogador: object):
+def matematica( jogador: object):
   jogador.vida = 3
   jogador.moeda = 0
   jogador.pulo = 0

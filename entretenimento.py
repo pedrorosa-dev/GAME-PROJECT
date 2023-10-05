@@ -7,7 +7,7 @@ from functions import menu_temas
 
 #TEMA - ENTRETEIRIMENTO -FUN - TEMA 1 - 1 PERGUNTA
 
-def entretenimento(jogador: object):
+def entretenimento( jogador: object):
   jogador.vida = 3
   jogador.moeda = 0
   jogador.pulo = 0

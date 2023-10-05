@@ -4,7 +4,7 @@ from functions import limpar_terminal
 from functions import menu_temas
 
 
-def programacao(jogador: object):
+def programacao( jogador: object):
   jogador.vida = 3
   jogador.moeda = 0
   jogador.pulo = 0

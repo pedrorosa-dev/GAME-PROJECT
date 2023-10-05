@@ -2,6 +2,7 @@ from functions import mostrar_loja
 from functions import cena
 from functions import limpar_terminal
 from functions import menu_temas
+from functions import mostrar_loja
 
 def matematica( jogador: object):
   jogador.vida = 3

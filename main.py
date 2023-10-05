@@ -5,7 +5,6 @@ from functions import cadastrar_usuario
 from functions import tempo_resposta
 from functions import cena
 from functions import menu_temas
-
 # MENU LOGIN
 # Dicionário para armazenar nomes de usuário e senhas
 banco_usuarios = {}

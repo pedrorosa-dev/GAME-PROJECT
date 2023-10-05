@@ -151,17 +151,17 @@ def menu_temas(jogador: object):
             
     if escolha ==  1:
         cena()
-        entretenimento(jogador)
+        entretenimento()
     
     #ADICIONAR AS OUTRAS DUAS FUNCOES DO TEMA
     
     elif escolha == 2:
         cena()
-        programacao(jogador)
+        programacao()
         
     elif escolha == 3:
         cena()
-        matematica(jogador)
+        matematica()
         
     elif escolha == 4:
         # Sair do programa - Leave the program

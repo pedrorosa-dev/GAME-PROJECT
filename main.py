@@ -1,3 +1,4 @@
+# TENTEI OTIMIZAR OS CODIGOS SEPARANDO POR ARQUIVO MAS NAO DEU!
 import time 
 import sys
 from functions import limpar_terminal

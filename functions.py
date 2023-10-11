@@ -29,7 +29,7 @@ class Jogador:
     def __init__(self, nome):
         self.nome = nome
         self.vida = 0  # Vida inicial 3
-        self.moeda = 0# Moeda inicial 1
+        self.moeda = 1# Moeda inicial 1
         self.pulo = 0#pulo inicial 0
 
 def cadastrar_usuario(nome):
@@ -116,7 +116,7 @@ def mostrar_loja(jogador: object):
 #MENU DO TEMAS - theme
 def menu_temas(jogador: object):
   jogador.vida = 3
-  jogador.moeda = 0
+  jogador.moeda = 1
   jogador.pulo = 0
   while True:
     print("=" * 100)
@@ -545,7 +545,14 @@ def entretenimento(jogador: object):
       else:
         jogador.pulo -=1
         cena()
+        print("="*100)
+        print("")
+        print("<<PARABÉNS VOCÊ GANHOU!>>")
+        print("")
+        print("="*100)
+        limpar_terminal()
         break
+        
     
     if escolha_entretenimento != 3 and escolha_entretenimento < 5:
       cena()
@@ -948,6 +955,12 @@ def programacao(jogador: object):
       else:
         jogador.pulo -=1
         cena()
+        print("="*100)
+        print("")
+        print("<<PARABÉNS VOCÊ GANHOU!>>")
+        print("")
+        print("="*100)
+        limpar_terminal()
         break
     
     if escolha_programacao != 1 and escolha_programacao < 5:
@@ -980,11 +993,6 @@ def programacao(jogador: object):
     
     #TEMA 3 - MATEMATICA - PERGUNTA 1
     
-    from functions import mostrar_loja
-from functions import cena
-from functions import limpar_terminal
-from functions import menu_temas
-from functions import mostrar_loja
 
 def matematica( jogador: object):
   jogador.vida = 3
@@ -1358,7 +1366,14 @@ def matematica( jogador: object):
       else:
         jogador.pulo -=1
         cena()
+        print("="*100)
+        print("")
+        print("<<PARABÉNS VOCÊ GANHOU!>>")
+        print("")
+        print("="*100)
+        limpar_terminal()
         break
+        
     
     if escolha_programacao != 1 and escolha_programacao < 5:
       cena()

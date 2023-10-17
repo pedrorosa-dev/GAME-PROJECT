@@ -28,8 +28,8 @@ def tempo_resposta():
 class Jogador:
     def __init__(self, nome):
         self.nome = nome
-        self.vida = 0  # Vida inicial 3
-        self.moeda = 1# Moeda inicial 1
+        self.vida = 0  # Vida inicial 0
+        self.moeda = 0# Moeda inicial 0 
         self.pulo = 0#pulo inicial 0
 
 def cadastrar_usuario(nome):
@@ -116,7 +116,7 @@ def mostrar_loja(jogador: object):
 #MENU DO TEMAS - theme
 def menu_temas(jogador: object):
   jogador.vida = 3
-  jogador.moeda = 1
+  jogador.moeda = 0
   jogador.pulo = 0
   while True:
     print("=" * 100)
@@ -151,8 +151,6 @@ def menu_temas(jogador: object):
         cena()
         entretenimento(jogador)
     
-    #ADICIONAR AS OUTRAS DUAS FUNCOES DO TEMA
-    
     elif escolha == 2:
         cena()
         programacao(jogador)
@@ -178,7 +176,7 @@ def menu_temas(jogador: object):
 
 def entretenimento(jogador: object):
   jogador.vida = 3
-  jogador.moeda = 0
+  jogador.moeda = 1
   jogador.pulo = 0
   while True:
     print("="*100)
@@ -586,7 +584,7 @@ def entretenimento(jogador: object):
 
 def programacao(jogador: object):
   jogador.vida = 3
-  jogador.moeda = 0
+  jogador.moeda = 1
   jogador.pulo = 0
   while True:
     print("="*100)
@@ -996,7 +994,7 @@ def programacao(jogador: object):
 
 def matematica( jogador: object):
   jogador.vida = 3
-  jogador.moeda = 0
+  jogador.moeda = 1
   jogador.pulo = 0
   while True:
     print("="*100)
@@ -1032,22 +1030,22 @@ def matematica( jogador: object):
     
     while True:
         try:
-            escolha_programacao = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            escolha_matematica = int(input("Digite de 1 a 6 para escolher uma opção: "))
             print("="*100)
-            if escolha_programacao not in [1, 2, 3, 4, 5 , 6]:
+            if escolha_matematica not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print("")
             print(f"Erro: apenas de 1 a 6.")
             print("")
-    if escolha_programacao == 5:
+    if escolha_matematica == 5:
         print("")
         print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
-    if escolha_programacao == 6:
+    if escolha_matematica == 6:
       if jogador.pulo < 1:
         print("")
         print("Não há pulos disponíveis no momento...")
@@ -1057,7 +1055,7 @@ def matematica( jogador: object):
         cena()
         break #passar para proxima pergunta
     
-    if escolha_programacao != 2 and escolha_programacao < 5:
+    if escolha_matematica != 2 and escolha_matematica < 5:
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
@@ -1074,14 +1072,14 @@ def matematica( jogador: object):
         print("Resposta incorreta, tente mais uma vez!")
         print("")
     
-    elif escolha_programacao == 2 and escolha_programacao < 5:
+    elif escolha_matematica == 2 and escolha_matematica < 5:
       print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
       break 
   
-  while True: # TEMA 2 - PERGUNTA 2
+  while True: # TEMA 3 - PERGUNTA 2
     print("="*100)
     print("")
     print("[Matemática]")
@@ -1112,22 +1110,22 @@ def matematica( jogador: object):
 
     while True:
         try:
-            escolha_programacao = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            escolha_matematica = int(input("Digite de 1 a 6 para escolher uma opção: "))
             print("="*100)
-            if escolha_programacao not in [1, 2, 3, 4, 5 , 6]:
+            if escolha_matematica not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print("")
             print(f"Erro: apenas de 1 a 6.")
             print("")
-    if escolha_programacao == 5:
+    if escolha_matematica == 5:
         print("")
         print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
-    if escolha_programacao == 6:
+    if escolha_matematica == 6:
       if jogador.pulo < 1:
         print("")
         print("Não há pulos disponíveis no momento...")
@@ -1137,7 +1135,7 @@ def matematica( jogador: object):
         cena()
         break
     
-    if escolha_programacao != 3 and escolha_programacao < 5:
+    if escolha_matematica != 3 and escolha_matematica < 5:
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
@@ -1152,14 +1150,14 @@ def matematica( jogador: object):
         print("Resposta incorreta, tente mais uma vez!")
         print("")
     
-    elif escolha_programacao == 3 and escolha_programacao < 5:
+    elif escolha_matematica == 3 and escolha_matematica < 5:
       print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
       break
     
-  while True: #TEMA 2- PERGUNTA 3
+  while True: #TEMA 3- PERGUNTA 3
     print("="*100)
     print("[Matemática]")
     print("")
@@ -1189,22 +1187,22 @@ def matematica( jogador: object):
 
     while True:
         try:
-            escolha_programacao = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            escolha_matematica = int(input("Digite de 1 a 6 para escolher uma opção: "))
             print("="*100)
-            if escolha_programacao not in [1, 2, 3, 4, 5 , 6]:
+            if escolha_matematica not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print("")
             print(f"Erro: apenas de 1 a 6.")
             print("")
-    if escolha_programacao == 5:
+    if escolha_matematica == 5:
         print("")
         print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
-    if escolha_programacao == 6:
+    if escolha_matematica == 6:
       if jogador.pulo < 1:
         print("")
         print("Não há pulos disponíveis no momento...")
@@ -1213,7 +1211,7 @@ def matematica( jogador: object):
         jogador.pulo -=1
         break
     
-    if escolha_programacao != 1 and escolha_programacao < 5:
+    if escolha_matematica != 1 and escolha_matematica < 5:
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
@@ -1228,14 +1226,14 @@ def matematica( jogador: object):
         print("Resposta incorreta, tente mais uma vez!")
         print("")
     
-    elif escolha_programacao == 1 and escolha_programacao < 5:
+    elif escolha_matematica == 1 and escolha_matematica < 5:
       print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
       break
     
-  while True: #TEMA 2 - PERGUNTA 4
+  while True: #TEMA 3 - PERGUNTA 4
     print("="*100)
     print("")
     print("[Matemática]")
@@ -1266,22 +1264,22 @@ def matematica( jogador: object):
 
     while True:
         try:
-            escolha_programacao = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            escolha_matematica = int(input("Digite de 1 a 6 para escolher uma opção: "))
             print("="*100)
-            if escolha_programacao not in [1, 2, 3, 4, 5 , 6]:
+            if escolha_matematica not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print("")
             print(f"Erro: apenas de 1 a 6.")
             print("")
-    if escolha_programacao == 5:
+    if escolha_matematica == 5:
         print("")
         print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
-    if escolha_programacao == 6:
+    if escolha_matematica == 6:
       if jogador.pulo < 1:
         print("")
         print("Não há pulos disponíveis no momento...")
@@ -1291,7 +1289,7 @@ def matematica( jogador: object):
         cena()
         break
     
-    if escolha_programacao != 1 and escolha_programacao < 5:
+    if escolha_matematica != 1 and escolha_matematica < 5:
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
@@ -1306,14 +1304,14 @@ def matematica( jogador: object):
         print("Resposta incorreta, tente mais uma vez!")
         print("")
     
-    elif escolha_programacao == 1 and escolha_programacao < 5:
+    elif escolha_matematica == 1 and escolha_matematica < 5:
       print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1
       cena()
       break
     
-  while True: #TEMA 2 - PERGUNTA 5
+  while True: #TEMA 3 - PERGUNTA 5
     print("="*100)
     print("")
     print("[Matemática]")
@@ -1343,22 +1341,22 @@ def matematica( jogador: object):
 
     while True:
         try:
-            escolha_programacao = int(input("Digite de 1 a 6 para escolher uma opção: "))
+            escolha_matematica = int(input("Digite de 1 a 6 para escolher uma opção: "))
             print("="*100)
-            if escolha_programacao not in [1, 2, 3, 4, 5 , 6]:
+            if escolha_matematica not in [1, 2, 3, 4, 5 , 6]:
                 raise ValueError
             break  # Sai do loop se o número válido for digitado
         except ValueError:
             print("")
             print(f"Erro: apenas de 1 a 6.")
             print("")
-    if escolha_programacao == 5:
+    if escolha_matematica == 5:
         print("")
         print("Entrando...")
         cena()
         mostrar_loja(jogador)
 
-    if escolha_programacao == 6:
+    if escolha_matematica == 6:
       if jogador.pulo < 1:
         print("")
         print("Não há pulos disponíveis no momento...")
@@ -1375,7 +1373,7 @@ def matematica( jogador: object):
         break
         
     
-    if escolha_programacao != 1 and escolha_programacao < 5:
+    if escolha_matematica != 1 and escolha_matematica < 5:
       cena()
       jogador.vida -= 1
       if jogador.vida < 1:
@@ -1390,7 +1388,7 @@ def matematica( jogador: object):
         print("Resposta incorreta, tente mais uma vez!")
         print("")
     
-    elif escolha_programacao == 1 and escolha_programacao < 5:
+    elif escolha_matematica == 1 and escolha_matematica < 5:
       print("")
       print("Resposta correta!! Você ganhou uma moeda!")
       jogador.moeda += 1

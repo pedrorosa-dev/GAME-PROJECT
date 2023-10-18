@@ -1,11 +1,7 @@
 # TENTEI OTIMIZAR OS CODIGOS SEPARANDO POR ARQUIVO MAS NAO DEU!
 import time 
 import sys
-from functions import limpar_terminal
-from functions import cadastrar_usuario
-from functions import tempo_resposta
-from functions import cena
-from functions import menu_temas
+from functions import limpar_terminal, cadastrar_usuario, tempo_resposta, cena, menu_temas
 # MENU LOGIN
 # Dicionário para armazenar nomes de usuário e senhas
 banco_usuarios = {}
